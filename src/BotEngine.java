@@ -127,10 +127,17 @@ public class BotEngine{
 		return x;
 	}
 	@SuppressWarnings("resource")
-	public static void main(String[]a) throws FileNotFoundException{
+	public static void main(String[]args) throws FileNotFoundException{
 		bots.add(new Bot());
 		Scanner in=new Scanner(System.in);
-		Scanner read=new Scanner(new File(in.nextLine()+".bot"));
+		String fname;
+		if(args.length>0){
+			fname=args[0];
+		}else{
+			fname=in.nextLine();
+		}
+		if(new File(fname).getName().indexOf(".")==-1)fname+=".bot";
+		Scanner read=new Scanner(new File(fname));
 		List<char[]>linez=new ArrayList<>();
 		while(read.hasNext()){
 			linez.add(read.nextLine().toCharArray());
