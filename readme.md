@@ -1,4 +1,5 @@
-#Bot Engine
+Bot Engine
+===
 
 Bot Engine is a 2-dimensional, queue-based, concurrent programming language inspired by the game [Manufactoria](http://pleasingfungus.com/Manufactoria/).
 
