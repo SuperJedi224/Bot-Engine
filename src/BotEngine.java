@@ -194,6 +194,7 @@ public class BotEngine{
 				if(linez.get(y)[x]=='R')b.q.reverse();
 				if(linez.get(y)[x]=='I')for(char c:in.nextLine().toCharArray())b.q.append(c);
 				if(linez.get(y)[x]=='d')b.q.duplicate();
+				if(linez.get(y)[x]=='D'&&!b.q.isEmpty())b.q.poll();
 				if(linez.get(y)[x]=='~')b.q.rotate();
 				if(linez.get(y)[x]=='@')b.q.unrotate();
 				int x1=x(x,Dir.ccw(b.d));
