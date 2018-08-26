@@ -35,6 +35,7 @@ E  If the current bot's queue is empty, rotate its direction of travel 90 degree
 I  Read a line from the input and add its characters to the current bot's queue.
 e  Find the symbol to the left (relative to the current bot's direction of travel). Add it to the current bot's queue.
 d  Duplicate the symbol at the front of the current bot's queue. A no-op if the queue is empty.
+D  Dequeue the symbol at the front of the current bot's queue. A no-op if the queue is empty.
 S  Find the symbol to the left (relative to the current bot's direction of travel). If the symbol at the front of the current bot's queue matches this symbol, dequeue it and rotate the bot's direction of travel 90 degrees clockwise.
 ~  Move a symbol from the front to the end of the current bot's queue. A no-op if the queue is empty.
 @  Move a symbol from the end to the front of the current bot's queue. A no-op if the queue is empty.
