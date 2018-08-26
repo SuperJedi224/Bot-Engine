@@ -10,7 +10,7 @@ Bots are updated in the order they were created.
 
 Execution halts when no bots remain.
 
-Additionally, any rows in the program grid that are shorter than the longest row will be automatically right-padded with spaces by the interpreter to match the length of the longest row.
+Additionally, any rows in the program grid that are shorter than the longest row will be automatically right-padded with spaces (which are no-ops) by the interpreter to match the length of the longest row.
 
 ---
 
